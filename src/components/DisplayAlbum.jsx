@@ -7,8 +7,8 @@ const DisplayAlbum = () => {
   const { id } = useParams();
   const albumdata = albumsData[id];
 
-  console.log(albumdata);
-  console.log(id);
+  // console.log(albumdata);
+  // console.log(id);
   return (
     <>
       <Navbar />
