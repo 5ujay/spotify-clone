@@ -4,14 +4,14 @@ import DisplayHome from "./DisplayHome";
 import DisplayAlbum from "./DisplayAlbum";
 import { albumsData } from "../assets/assets";
 import Music from "./Muisc/Music";
-import Podcasts from "./Podcasts";
+import Podcasts from "./Podcasts/Podcasts";
 
 const Display = () => {
   const displayRef = useRef();
-  const location = useLocation(); // Corrected typo: useLocation instead of loaction
+  const location = useLocation();
   const isAlbum = location.pathname.includes("album");
   const albumId = isAlbum ? location.pathname.slice(-1) : "";
-  const bgColor = isAlbum ? albumsData[Number(albumId)].bgColor : "#121212"; // Handle default case
+  const bgColor = isAlbum ? albumsData[Number(albumId)].bgColor : "#121212";
 
   useEffect(() => {
     if (isAlbum) {
@@ -19,7 +19,7 @@ const Display = () => {
     } else {
       displayRef.current.style.background = `#121212`;
     }
-  }, [bgColor, isAlbum]); // Added dependencies to useEffect
+  }, [bgColor, isAlbum]);
 
   return (
     <div
