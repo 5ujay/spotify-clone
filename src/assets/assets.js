@@ -180,3 +180,73 @@ export const songsData = [
     duration: "2:35",
   },
 ];
+
+// images for top artist
+import krsna from "./krsna_img1.jpg";
+import divine from "./divine_img2.jpg";
+import guru from "./guru_img3.jpg";
+import karan from "./karan_img4.jpg";
+import mc_stan from "./mc_stan_img5.avif";
+import badsha from "./badsha_img6.jpeg";
+import honey from "./honey_img7.jpg";
+
+import Joota_Japani from "./Joota_Japani.mp3";
+
+export const TopArtists = [
+  {
+    id: 0,
+    name: "Song One",
+    image: krsna,
+    file: Joota_Japani,
+    desc: "Put a smile on your face with these happy tunes",
+    duration: "3:00",
+  },
+  {
+    id: 1,
+    name: "Song Two",
+    image: divine,
+    file: song2,
+    desc: "Put a smile on your face with these happy tunes",
+    duration: "2:20",
+  },
+  {
+    id: 2,
+    name: "Song Three",
+    image: guru,
+    file: song3,
+    desc: "Put a smile on your face with these happy tunes",
+    duration: "2:32",
+  },
+  {
+    id: 3,
+    name: "Song Four",
+    image: karan,
+    file: song1,
+    desc: "Put a smile on your face with these happy tunes",
+    duration: "2:50",
+  },
+  {
+    id: 4,
+    name: "Song Five",
+    image: mc_stan,
+    file: song2,
+    desc: "Put a smile on your face with these happy tunes",
+    duration: "3:10",
+  },
+  {
+    id: 5,
+    name: "Song Six",
+    image: badsha,
+    file: song3,
+    desc: "Put a smile on your face with these happy tunes",
+    duration: "2:45",
+  },
+  {
+    id: 6,
+    name: "Song Seven",
+    image: honey,
+    file: song1,
+    desc: "Put a smile on your face with these happy tunes",
+    duration: "2:18",
+  },
+];

@@ -3,6 +3,8 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import DisplayHome from "./DisplayHome";
 import DisplayAlbum from "./DisplayAlbum";
 import { albumsData } from "../assets/assets";
+import Music from "./Muisc/Music";
+import Podcasts from "./Podcasts";
 
 const Display = () => {
   const displayRef = useRef();
@@ -27,6 +29,8 @@ const Display = () => {
       <Routes>
         <Route path="/" element={<DisplayHome />} />
         <Route path="/album/:id" element={<DisplayAlbum />} />
+        <Route path="/music" element={<Music />} />
+        <Route path="podcasts" element={<Podcasts />} />
       </Routes>
     </div>
   );
