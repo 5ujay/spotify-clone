@@ -12,7 +12,7 @@ This project is a simple demonstration of a Spotify clone developed as a learnin
 
 - **player.jsx**: Manages the player component responsible for playing songs and related functionalities.
 
-- **display.jsx**: Main UI component where songs can be selected and played. It interacts with `playerContext.js`.
+- **display.jsx**: Main UI component where songs can be selected and played. ex.All > songs,albums>albumsdata ,etc , Music , Podcast
 
 - **playerContext.js**: Defines the context for managing player-related state and logic across components.
 
